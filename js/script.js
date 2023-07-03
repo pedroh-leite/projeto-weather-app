@@ -49,7 +49,6 @@ const hideInformation = () => {
     errorMessageContainer.classList.add("hide");
     weatherContainer.classList.add("hide");
 
-    suggestionsContainer.classList.add("hide");
 };
 
 const showWeatherData = async (city) => {
@@ -97,11 +96,14 @@ cityInput.addEventListener("keyup", (e) => {
     }
 });
 
-// Sugestões
-suggestionsButton.forEach((btn) => {
-    btn.addEventListener("click", () => {
-        const city = btn.getAttribute("id");
+////////////////////////////////////////
+// FUNÇÕES RETIRADAS DO APP
 
-        showWeatherData(city);
-    });    
-});
+// Sugestões
+// suggestionsButton.forEach((btn) => {
+//     btn.addEventListener("click", () => {
+//         const city = btn.getAttribute("id");
+
+//         showWeatherData(city);
+//     });    
+// });
